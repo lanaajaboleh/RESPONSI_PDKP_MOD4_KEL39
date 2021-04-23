@@ -12,7 +12,7 @@ class user:
     def decrypt(self):
         for i in kalimat:
             count=0
-            for j in key:
+            for j in kunci:
                 if i == j:
                     print(alfabet[count], end ="")
                 count+=1
