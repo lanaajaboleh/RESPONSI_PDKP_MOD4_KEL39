@@ -1,29 +1,27 @@
-import dekripsi
-def encrypt(string, geser):
- 
-  cipher = ''
-  for char in string: 
-    if char == ' ':
-      arti = arti + char
-    elif  char.isupper():
-      arti = arti + chr((ord(char) + geser - 65) % 26 + 65)
-    else:
-      arti = arti + chr((ord(char) + geser - 97) % 26 + 97)
-  
-  return arti
- 
-layanan=input("Pilih layanan:\n1. Enkripsi\n2. Dekripsi")
+alfabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ '
+kunci = 'nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM '
 
-panggil = dekripsi.method()
+def encrypt():
+    for i in kalimat:
+        count=0
+        for j in alfabet:
+            if i == j:
+                print(kunci[count], end = "")
+            count+=1
+class user:
+    def decrypt(self):
+        for i in kalimat:
+            count=0
+            for j in key:
+                if i == j:
+                    print(alfabet[count], end ="")
+                count+=1
 
-if (layanan == 1):
-    text = input("\nMasukkan teks: ")
-    s = int(input("Masukkan pergeseran sesuai kelompok: "))
-    print("sebelum enkripsi: ", text)
-    print("setelah dekripsi: ", encrypt(text, s))
-
-else:
-    text = input("\nMasukkan teks: ")
-    s = int(input("Masukkan pergeseran sesuai kelompok: "))
-    print("sebelum enkripsi: ", text)
-    print("setelah dekripsi: ", panggil.decrypt(text, s))
+pil=int(input("Pilih layanan\n1. Enkripsi\n2. Dekripsi\n"))
+if pil == 1 :
+    kalimat = input('Masukkan teks: ')
+    encrypt()
+elif pil == 2 :
+    kalimat = input('Masukkan teks: ')
+    name = user()
+    name.decrypt()
