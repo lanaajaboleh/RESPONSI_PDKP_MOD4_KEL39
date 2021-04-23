@@ -1,3 +1,4 @@
+import dekripsi
 def encrypt(string, geser):
  
   cipher = ''
@@ -13,16 +14,16 @@ def encrypt(string, geser):
  
 layanan=input("Pilih layanan:\n1. Enkripsi\n2. Dekripsi")
 
+panggil = dekripsi.method()
 
-if (layanan = 1)
-text = input("\nMasukkan teks: ")
-s = int(input("Masukkan pergeseran sesuai kelompok: "))
-print("sebelum enkripsi: ", text)
-print("setelah dekripsi: ", encrypt(text, s))
+if (layanan == 1):
+    text = input("\nMasukkan teks: ")
+    s = int(input("Masukkan pergeseran sesuai kelompok: "))
+    print("sebelum enkripsi: ", text)
+    print("setelah dekripsi: ", encrypt(text, s))
 
-
-
-
-
-   
-
+else:
+    text = input("\nMasukkan teks: ")
+    s = int(input("Masukkan pergeseran sesuai kelompok: "))
+    print("sebelum enkripsi: ", text)
+    print("setelah dekripsi: ", panggil.decrypt(text, s))
