@@ -1,7 +1,7 @@
 class method():
     def encrypt(string, shift):
         
-    cipher = ''
+    arti = ''
     for char in string: 
      if char == ' ':
           arti = arti + char
